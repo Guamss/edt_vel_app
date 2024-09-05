@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EDT Vélizy 2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">EDT Vélizy 2</string>
+    <string name="second_fragment_label">Emplois du temps</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Revenir en arrière</string>
+
+</resources>

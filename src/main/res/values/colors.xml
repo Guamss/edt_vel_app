@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_light_primary">#BB86FC</color>
+    <color name="my_light_on_primary">#000000</color>
+    <color name="my_light_background">#121212</color>
+    <color name="my_light_surface">#1E1E1E</color>
+    <color name="my_light_on_background">#FFFFFF</color>
+    <color name="my_light_on_surface">#FFFFFF</color>
+    <color name="my_dark_primary">#FFFFFF</color> <!-- Couleur primaire pour le mode sombre (blanc) -->
+    <color name="my_dark_on_primary">#000000</color> <!-- Couleur du texte sur la couleur primaire (noir) -->
+    <color name="my_dark_background">#121212</color> <!-- Couleur de fond (noir très foncé) -->
+    <color name="my_dark_surface">#1E1E1E</color> <!-- Couleur de surface (gris foncé) -->
+    <color name="my_dark_on_background">#FFFFFF</color> <!-- Couleur du texte sur le fond (blanc) -->
+    <color name="my_dark_on_surface">#FFFFFF</color> <!-- Couleur du texte sur la surface (blanc) -->
+
+</resources>
