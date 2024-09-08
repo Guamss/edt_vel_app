@@ -9,6 +9,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringJoiner;
@@ -73,6 +75,7 @@ public class Jour implements Serializable
             }
 
             this.coursList = new JSONParser(response.toString()).toCoursArray();
+            Collections.sort(this.coursList);
 
         }
         else
@@ -80,6 +83,7 @@ public class Jour implements Serializable
             throw new Exception("Erreur de communication avec le serveur : " + status);
         }
     }
+
     public ArrayList<Cours> getCoursList()
     {
         return this.coursList;

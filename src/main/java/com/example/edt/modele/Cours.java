@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Cours implements Serializable
+public class Cours implements Serializable, Comparable<Cours>
 {
     private Date startHour;
     private Date endHour;
@@ -49,5 +49,27 @@ public class Cours implements Serializable
     public String toString()
     {
         return "------------------------------------------------------------------\n" + this.startHour.getHours() + ":" + this.startHour.getMinutes() + " - " + this.endHour.getHours() + ":" + this.endHour.getMinutes() + "\n" + this.getDesc();
+    }
+
+    @Override
+    public int compareTo(Cours cours)
+    {
+        if (this.startHour.getHours() > cours.startHour.getHours())
+        {
+            return 1;
+        }
+        else if (this.startHour.getHours() < cours.startHour.getHours())
+        {
+            return -1;
+        }
+        if (this.startHour.getMinutes() > cours.startHour.getMinutes()) // si l'heure n'est ni suppérieure ni inférieure alors elles sont égales donc on compare les minutes
+        {
+            return 1;
+        }
+        else if (this.startHour.getMinutes() < cours.startHour.getMinutes())
+        {
+            return -1;
+        }
+        return 0;
     }
 }
